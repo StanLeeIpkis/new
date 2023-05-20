@@ -26,7 +26,7 @@
     background-color: #333333;
   }
   .right-side {
-    background-color: #4F8CFF;
+    background-color: #7ad2e6;
   }
   /* Стили для десктопной версии */
   @media (min-width: 768px) {
@@ -62,9 +62,9 @@
   
   body {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.5;
-    color: rgb(134, 134, 134);
+    color: rgba(65, 55, 207, 0.856);
   }
   
   .container {
@@ -89,7 +89,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 26px;
     margin-bottom: 20px;
-    color: rgb(134, 133, 133);
+    color: rgb(255, 240, 37);
   }
   
   .left-section button {
@@ -148,20 +148,20 @@
   
   .right-side p {
     margin-bottom: 20px;
-    color: #fff;
+    color: #000000;
   }
   
   .right-side h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000000;
   }
   
   .right-side tr {
     margin-bottom: 20px;
     list-style: none;
-    color: #fff;
+    color:#000000;
   }
   
   .right-side td {
@@ -172,11 +172,11 @@
     display: inline-block;
     width: 200px;
     font-weight: bold;
-    color: #fff;
+    color:#000000(0, 0, 0);
   }
   
   .right-side td a {
-    color: #fff;
+    color: #000000(0, 0, 0);
   }
   
   /* Медиа-запросы */
@@ -194,9 +194,23 @@
   
     .right-side {
       flex-basis: 100%;
-      padding-left: 0;
+      padding-left: 15px;
       margin-top: 20px;
+      overflow-x: auto;
+      max-width: 100%;
     }
+  
+    .right-side table {
+      width: 100%;
+      table-layout: fixed; /* Фиксированная ширина ячеек */
+    border-collapse: collapse; /* Объединение границ ячеек */
+    font-size: 10px;
+    
+    }
+    .right-side table td,
+  .right-side table th {
+    word-wrap: break-word; /* Перенос текста на новую строку */
+  }
   }
   table {
     border-collapse: collapse;
@@ -205,5 +219,42 @@
   
   th, td {
     border: 1px solid #0000007d;
+    padding: 3px;
+  }
+  .contact-icons {
+    text-align: right;
+  }
+  
+  .contact-icons a {
+    display: inline-block;
+    margin-left: 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .contact-icons a i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .contact-icons a i.fa-instagram {
+    background-color: #e4405f;
+    color: #fff;
+  }
+  
+  .contact-icons a i.fa-facebook {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  .contact-icons a img {
+    max-height: 25px;
+    padding-right: 30px;
+    position: inherit;
   }
   
